@@ -12,9 +12,12 @@
         "Standard_RAGRS",
         "Premium_LRS"
       ]
-    }},
+    }
+  },
   "variables": {
-    "speedStorageName": "[concat('speedStorage', uniqueString(resourceGroup().id))]"},
+    // "speedStorageName": "[concat('speedStorage', uniqueString(resourceGroup().id))]"},
+    "speedStorageName": "cs206b80c912ff3x4db8x87"
+  },
   "resources": [
     {
       "name": "[variables('speedStorageName')]",
@@ -24,11 +27,12 @@
       "sku": {
         "name": "[parameters('speedStorageType')]"
       },
-      "dependsOn": [ ],
+      "dependsOn": [],
       "tags": {
         "displayName": "speedStorage"
       },
       "kind": "Storage"
-    }],
+    }
+  ],
   "outputs": {}
 }
