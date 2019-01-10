@@ -16,7 +16,7 @@
   },
   "variables": {
     // "speedStorageName": "[concat('speedStorage', uniqueString(resourceGroup().id))]"},
-    "speedStorageName": "cs206b80c912ff3x4db8x87"
+    "speedStorageName": "cs206b"
   },
   "resources": [
     {
